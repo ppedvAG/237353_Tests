@@ -1,0 +1,42 @@
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+      <Rule Match="Any">
+        <Rule Match="All">
+          <Property Name="Project" Value="Calculator.Tests" />
+          <Rule Match="Any">
+            <Rule Match="All">
+              <Property Name="Namespace" Value="Calculator.Tests.CalcTests" />
+              <Rule Match="Any">
+                <Rule Match="All">
+                  <Property Name="Class" Value="SumTests" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Calculator.Tests.CalcTests.SumTests.Sum_MAX_and_1_throws_OverflowsException" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Calculator.Tests.CalcTests.SumTests.Sum_MAX_and_1_throws_OverflowsException" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+                <Rule Match="All">
+                  <Property Name="Class" Value="MultiplyTests" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="Calculator.Tests.CalcTests.MultiplyTests.Multiply_should_throw_OverflowException" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="Calculator.Tests.CalcTests.MultiplyTests.Multiply_should_throw_OverflowException(a: -2147483648, b: 2)" />
+                        <Property Name="DisplayName" Value="Calculator.Tests.CalcTests.MultiplyTests.Multiply_should_throw_OverflowException(a: 2147483647, b: 2)" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+              </Rule>
+            </Rule>
+          </Rule>
+        </Rule>
+      </Rule>
+    </Rule>
+  </Rule>
+</Playlist>

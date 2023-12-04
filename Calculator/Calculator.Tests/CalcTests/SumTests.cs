@@ -29,6 +29,8 @@ namespace Calculator.Tests.CalcTests
         }
 
         [Fact]
+        [Trait("Category", "Unittest")]
+        [Trait("Exception", "OverflowsException")]
         public void Sum_MAX_and_1_throws_OverflowsException()
         {
             var calc = new Calc();
