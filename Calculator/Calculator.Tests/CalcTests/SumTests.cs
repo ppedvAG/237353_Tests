@@ -1,6 +1,6 @@
-namespace Calculator.Tests
+namespace Calculator.Tests.CalcTests
 {
-    public class CalcTests
+    public class SumTests
     {
         [Fact]
         public void Sum_3_and_4_results_7()

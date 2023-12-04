@@ -6,5 +6,10 @@
         {
             return checked(a + b);
         }
+
+        public int Multiply(int a, int b)
+        {
+            return checked(a * b);
+        }
     }
 }
