@@ -12,6 +12,8 @@
         [InlineData(2023, 12, 9, 13, 0, true)] //sa
         [InlineData(2023, 12, 9, 15, 0, false)] //sa
         [InlineData(2023, 12, 10, 12, 0, false)] //so
+        [InlineData(2023, 12, 24, 12, 0, false)] 
+        [InlineData(2023, 11, 24, 20, 0, false)] 
         public void OpeningHours_IsOpen(int y, int M, int d, int h, int m, bool result)
         {
             var dt = new DateTime(y, M, d, h, m, 0);

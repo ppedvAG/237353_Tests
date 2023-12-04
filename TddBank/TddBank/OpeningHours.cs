@@ -6,6 +6,9 @@ namespace TddBank
     {
         public bool IsOpen(DateTime dateTime)
         {
+            if (dateTime.Month == 12 && dateTime.Day == 24)
+                return false;
+
             // Check if it's Monday and the time is between 10:30 and 19:00
             if (dateTime.DayOfWeek != DayOfWeek.Sunday && 
                 dateTime.DayOfWeek != DayOfWeek.Saturday &&
