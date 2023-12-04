@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34310.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBank", "TddBank\TddBank.csproj", "{8D1ACA55-732A-4635-AE18-740F5B7B4859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddBank.Tests", "TddBank.Tests\TddBank.Tests.csproj", "{3EB70DCA-7517-4CAF-833F-D8BBA0440A4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D1ACA55-732A-4635-AE18-740F5B7B4859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1ACA55-732A-4635-AE18-740F5B7B4859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1ACA55-732A-4635-AE18-740F5B7B4859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1ACA55-732A-4635-AE18-740F5B7B4859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EB70DCA-7517-4CAF-833F-D8BBA0440A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB70DCA-7517-4CAF-833F-D8BBA0440A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB70DCA-7517-4CAF-833F-D8BBA0440A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB70DCA-7517-4CAF-833F-D8BBA0440A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {282616CB-ED8E-458C-AE73-1CD36E4F7079}
+	EndGlobalSection
+EndGlobal
