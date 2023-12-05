@@ -1,3 +1,5 @@
+using AutoFixture;
+using FluentAssertions;
 using ppedv.CubicleCarnival.Model;
 
 namespace ppedv.CubicleCarnival.Data.EfCore.Tests
@@ -94,6 +96,32 @@ namespace ppedv.CubicleCarnival.Data.EfCore.Tests
             {
                 var loaded = con.Mitarbeiter.Find(m.Id);
                 Assert.Null(loaded);
+            }
+        }
+
+
+        [Fact]
+        public void Can_read_Mitarbeiter_with_AutoFixture()
+        {
+            var fix = new Fixture();
+            fix.Customize<Mitarbeiter>(x => x.Without(x => x.Id));
+            fix.Customize<Kunde>(x => x.Without(x => x.Id));
+            fix.Behaviors.Add(new OmitOnRecursionBehavior());
+            var m = fix.Create<Mitarbeiter>();
+
+            using (var con = new EfContext(conString))
+            {
+                con.Mitarbeiter.Add(m);
+                con.SaveChanges();
+            }
+
+            using (var con = new EfContext(conString))
+            {
+                var loaded = con.Mitarbeiter.Find(m.Id);
+                //Assert.NotNull(loaded);
+                //Assert.Equal(3, loaded.Kunden.Count());
+
+                loaded.Should().BeEquivalentTo(m, x => x.IgnoringCyclicReferences());
             }
         }
     }
