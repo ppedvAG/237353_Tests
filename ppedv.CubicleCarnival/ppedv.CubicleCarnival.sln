@@ -5,6 +5,10 @@ VisualStudioVersion = 17.9.34310.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.Model", "ppedv.CubicleCarnival.Model\ppedv.CubicleCarnival.Model.csproj", "{9BC6AE63-2F8C-4BB3-8962-B06F40E5C092}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.Data.EfCore", "ppedv.CubicleCarnival.Data.EfCore\ppedv.CubicleCarnival.Data.EfCore.csproj", "{1C836F3A-5D7A-4E74-91ED-BD42BB030020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.Data.EfCore.Tests", "ppedv.CubicleCarnival.Data.EfCore.Tests\ppedv.CubicleCarnival.Data.EfCore.Tests.csproj", "{07D387A1-48A5-4430-A0E4-836298B782F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9BC6AE63-2F8C-4BB3-8962-B06F40E5C092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BC6AE63-2F8C-4BB3-8962-B06F40E5C092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BC6AE63-2F8C-4BB3-8962-B06F40E5C092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C836F3A-5D7A-4E74-91ED-BD42BB030020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C836F3A-5D7A-4E74-91ED-BD42BB030020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C836F3A-5D7A-4E74-91ED-BD42BB030020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C836F3A-5D7A-4E74-91ED-BD42BB030020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D387A1-48A5-4430-A0E4-836298B782F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D387A1-48A5-4430-A0E4-836298B782F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D387A1-48A5-4430-A0E4-836298B782F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D387A1-48A5-4430-A0E4-836298B782F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
