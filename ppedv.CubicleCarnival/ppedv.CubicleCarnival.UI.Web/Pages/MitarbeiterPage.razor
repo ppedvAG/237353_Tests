@@ -1,0 +1,53 @@
+﻿@page "/mitarbeiter"
+@using ppedv.CubicleCarnival.Logic
+@using ppedv.CubicleCarnival.Model
+@using ppedv.CubicleCarnival.Model.Contracts
+@inject IRepository repo
+@inject PersonenService ps
+
+<PageTitle>Mitarbeiter</PageTitle>
+
+<h1>Mitarbeiter</h1>
+
+<p>🗓️ @avgAge</p>
+<button class="btn btn-primary" @onclick="AddEmployee">Neuer Mitarbeiter</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>GebDatum</th>
+            <th>Job</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in mitarbeiter)
+        {
+            <tr>
+                <td>@m.Name</td>
+                <td>@m.GebDatum.ToShortDateString()</td>
+                <td>@m.Job</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    List<Mitarbeiter> mitarbeiter;
+
+    double avgAge = -1;
+
+    protected override void OnInitialized()
+    {
+        mitarbeiter = repo.GetAll<Mitarbeiter>().ToList();
+        avgAge = ps.CalcAverageAgeOfAllEmployees();
+    }
+    private void AddEmployee()
+    {
+        var m = new Mitarbeiter() { Name = "NEU", GebDatum = DateTime.Now.AddYears(-50) };
+        repo.Add(m);
+        repo.SaveAll();
+
+        OnInitialized();
+    }
+}
