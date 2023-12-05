@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.UI.De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.UI.Web", "ppedv.CubicleCarnival.UI.Web\ppedv.CubicleCarnival.UI.Web.csproj", "{40AD440A-04DC-47A2-8DE5-9BFB88189EEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.UI.Web.Tests", "ppedv.CubicleCarnival.UI.Web.Tests\ppedv.CubicleCarnival.UI.Web.Tests.csproj", "{2D1593A6-A95E-4F56-8F24-D3E554F4C724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{40AD440A-04DC-47A2-8DE5-9BFB88189EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40AD440A-04DC-47A2-8DE5-9BFB88189EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40AD440A-04DC-47A2-8DE5-9BFB88189EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1593A6-A95E-4F56-8F24-D3E554F4C724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1593A6-A95E-4F56-8F24-D3E554F4C724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1593A6-A95E-4F56-8F24-D3E554F4C724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1593A6-A95E-4F56-8F24-D3E554F4C724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
