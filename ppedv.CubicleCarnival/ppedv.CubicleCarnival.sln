@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.Data.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.Data.EfCore.Tests", "ppedv.CubicleCarnival.Data.EfCore.Tests\ppedv.CubicleCarnival.Data.EfCore.Tests.csproj", "{07D387A1-48A5-4430-A0E4-836298B782F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.Logic", "ppedv.CubicleCarnival.Logic\ppedv.CubicleCarnival.Logic.csproj", "{0D189406-7987-4777-BFB1-E2743C7054D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.Logic.Tests", "ppedv.CubicleCarnival.Logic.Tests\ppedv.CubicleCarnival.Logic.Tests.csproj", "{1DAA8AFD-E3C5-495C-96EA-59868832FFE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CubicleCarnival.UI.DevConsole", "ppedv.CubicleCarnival.UI.DevConsole\ppedv.CubicleCarnival.UI.DevConsole.csproj", "{983E79D0-7572-47AF-B385-E9E6130E053C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{07D387A1-48A5-4430-A0E4-836298B782F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07D387A1-48A5-4430-A0E4-836298B782F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07D387A1-48A5-4430-A0E4-836298B782F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D189406-7987-4777-BFB1-E2743C7054D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D189406-7987-4777-BFB1-E2743C7054D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D189406-7987-4777-BFB1-E2743C7054D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D189406-7987-4777-BFB1-E2743C7054D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAA8AFD-E3C5-495C-96EA-59868832FFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAA8AFD-E3C5-495C-96EA-59868832FFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAA8AFD-E3C5-495C-96EA-59868832FFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAA8AFD-E3C5-495C-96EA-59868832FFE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983E79D0-7572-47AF-B385-E9E6130E053C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983E79D0-7572-47AF-B385-E9E6130E053C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983E79D0-7572-47AF-B385-E9E6130E053C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983E79D0-7572-47AF-B385-E9E6130E053C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ppedv.CubicleCarnival.Data.EfCore\ppedv.CubicleCarnival.Data.EfCore.csproj" />
+    <ProjectReference Include="..\ppedv.CubicleCarnival.Logic\ppedv.CubicleCarnival.Logic.csproj" />
+    <ProjectReference Include="..\ppedv.CubicleCarnival.Model\ppedv.CubicleCarnival.Model.csproj" />
+  </ItemGroup>
+
+</Project>
